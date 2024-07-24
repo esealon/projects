@@ -1,9 +1,0 @@
-section {
-    display: none;
-    position: absolute;
-    width: 100%;
-}
-
-section:target {
-    display: inline-block;
-}

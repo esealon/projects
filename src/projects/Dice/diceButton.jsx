@@ -16,7 +16,7 @@ function DiceButton() {
   const [showLuckyN, setShowLuckyN] = useState(false);
 
   const handleClickDice = () => {
-    setShowLuckyN(true);
+    setShowLuckyN((prevShowProject) => !prevShowProject); // Toggle the state
   };
 
   return (
@@ -26,8 +26,12 @@ function DiceButton() {
         text="Click me"
         image="https://res.cloudinary.com/dvucxxtju/image/upload/v1725911774/dice-2031511_640_wmpdbw.jpg"
         // hoverImage="https://example.com/hover-image.jpg"
-        onClick={handleClickDice} // Pass the function to be called on click
-      />
+        onClick={handleClickDice}
+      >
+        {" "}
+        // Pass the function to be called on click\
+        {showLuckyN ? "Hide Project" : "Show Project"}
+      </ReusableButton>
       {showLuckyN && <LuckyN winCheck={lessThan4} title="Roll less than 4" />}
       {showLuckyN && <LuckyN winCheck={allSameValue} title="Roll all equal" />}
     </div>

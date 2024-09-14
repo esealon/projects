@@ -23,10 +23,12 @@ function DiceButton() {
     <div>
       {/* Example usage of the reusable button with onClick */}
       <ReusableButton
-        text="Click me"
-        image="https://res.cloudinary.com/dvucxxtju/image/upload/v1725911774/dice-2031511_640_wmpdbw.jpg"
-        // hoverImage="https://example.com/hover-image.jpg"
+        text="Dice game"
+        image="https://res.cloudinary.com/dvucxxtju/image/upload/v1726072326/dice-568187_640_ohuz0q.jpg"
+        hoverImage="https://res.cloudinary.com/dvucxxtju/image/upload/v1726070688/game-7634718_640_c0nlzx.jpg"
         onClick={handleClickDice}
+        height="100px"
+        width="300px"
       >
         {" "}
         // Pass the function to be called on click\

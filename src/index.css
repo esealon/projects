@@ -28,6 +28,10 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 00;
+  font-style: normal;
 }
 
 h1 {
@@ -65,4 +69,10 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+#buttonName {
+  font-size: 25px;
+  color: black;
+  
 }

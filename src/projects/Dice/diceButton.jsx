@@ -15,10 +15,6 @@ function allSameValue(dice) {
 function DiceButton() {
   const [showLuckyN, setShowLuckyN] = useState(false);
 
-  const handleClickDice = () => {
-    setShowLuckyN((prevShowProject) => !prevShowProject); // Toggle the state
-  };
-
   return (
     <div>
       {/* Example usage of the reusable button with onClick */}
@@ -26,16 +22,15 @@ function DiceButton() {
         text="Dice game"
         image="https://res.cloudinary.com/dvucxxtju/image/upload/v1726072326/dice-568187_640_ohuz0q.jpg"
         hoverImage="https://res.cloudinary.com/dvucxxtju/image/upload/v1726070688/game-7634718_640_c0nlzx.jpg"
-        onClick={handleClickDice}
+        activeImage="https://res.cloudinary.com/dvucxxtju/image/upload/v1725911774/dice-2031511_640_wmpdbw.jpg"
         height="100px"
         width="300px"
-      >
-        {" "}
-        {/* // Pass the function to be called on click\ */}
-        {showLuckyN ? "Hide Project" : "Show Project"}
-      </ReusableButton>
-      {showLuckyN && <LuckyN winCheck={lessThan4} title="Roll less than 4" />}
-      {showLuckyN && <LuckyN winCheck={allSameValue} title="Roll all equal" />}
+        showElementt={showLuckyN}
+        setShowElementt={setShowLuckyN}
+        elementt={<LuckyN winCheck={lessThan4} title="Roll less than 4" />}
+      ></ReusableButton>
+      {/* {showLuckyN && <LuckyN winCheck={lessThan4} title="Roll less than 4" />}
+      {showLuckyN && <LuckyN winCheck={allSameValue} title="Roll all equal" />} */}
     </div>
   );
 }

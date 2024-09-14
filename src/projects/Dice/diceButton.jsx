@@ -31,7 +31,7 @@ function DiceButton() {
         width="300px"
       >
         {" "}
-        // Pass the function to be called on click\
+        {/* // Pass the function to be called on click\ */}
         {showLuckyN ? "Hide Project" : "Show Project"}
       </ReusableButton>
       {showLuckyN && <LuckyN winCheck={lessThan4} title="Roll less than 4" />}

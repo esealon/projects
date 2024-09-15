@@ -32,11 +32,18 @@ body {
   font-optical-sizing: auto;
   font-weight: 00;
   font-style: normal;
+  background-image: url("https://res.cloudinary.com/dvucxxtju/image/upload/v1726419216/ai-generated-8477952_1920_ukjyae.jpg");
+  background-size: cover; /* Make sure the image covers the whole page */
+  background-attachment: fixed;
+
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+color: #524A79;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+  1px 1px 0 white;
 }
 
 button {

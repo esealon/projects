@@ -17,7 +17,6 @@ function DiceButton() {
 
   return (
     <div>
-      {/* Example usage of the reusable button with onClick */}
       <ReusableButton
         text="Dice game"
         image="https://res.cloudinary.com/dvucxxtju/image/upload/v1726072326/dice-568187_640_ohuz0q.jpg"
@@ -26,11 +25,10 @@ function DiceButton() {
         height="100px"
         width="300px"
         showElementt={showLuckyN}
-        setShowElementt={setShowLuckyN}
-        elementt={<LuckyN winCheck={lessThan4} title="Roll less than 4" />}
+        setShowElementP={setShowLuckyN}
+        elementP={<LuckyN winCheck={lessThan4} title="Roll less than 4" />}
+        elementP2={<LuckyN winCheck={allSameValue} title="Roll all equal" />}
       ></ReusableButton>
-      {/* {showLuckyN && <LuckyN winCheck={lessThan4} title="Roll less than 4" />}
-      {showLuckyN && <LuckyN winCheck={allSameValue} title="Roll all equal" />} */}
     </div>
   );
 }

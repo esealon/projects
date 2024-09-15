@@ -6,18 +6,17 @@ import "./index.css";
 // Define a reusable button component with onClick
 const ReusableButton = ({
   text,
-  showElementt,
-  setShowElementt,
-  elementt,
+  showElementP,
+  setShowElementP,
+  elementP,
+  elementP2,
   image,
   hoverImage,
   activeImage,
-  onClick,
   width = "200px",
   height = "50px",
-  opacity = 1,
 }) => {
-  const [showElement = { showElementt }, setShowElement = { setShowElementt }] =
+  const [showElement = { showElementP }, setShowElement = { setShowElementP }] =
     useState(false);
 
   const handleClick = () => {
@@ -46,13 +45,14 @@ const ReusableButton = ({
           },
         }}
       >
-        <div id="buttonName">
+        <div className="buttonName">
           {text} {/* The text displayed inside the button */}
           <br />
           {showElement ? "Hide Project" : "Show Project"}
         </div>
       </Button>
-      {showElement && elementt}
+      {showElement && elementP}
+      {showElement && elementP2}
     </div>
   );
 };

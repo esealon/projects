@@ -27,6 +27,8 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  display: flex;
+  flex-grow: 1;
   justify-content: center;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -88,4 +90,5 @@ button:focus-visible {
   max-width: 300px;
   display: "flex";
   justify-content: center;
+ 
 }

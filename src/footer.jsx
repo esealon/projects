@@ -6,12 +6,15 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        position: "fixed",
-        bottom: 0,
-        left: 0,
+        // position: "relative",
+        // bottom: '-80px',
+        // left: 0,
+
         width: "100%",
         py: 2,
-        px: 2,
+       
+        // flexShrink: 0,
+
         backgroundColor: (theme) =>
           theme.palette.mode === "light" ? "#f1f1f1" : "#2c2c2c",
         boxShadow: "0 -2px 5px rgba(0, 0, 0, 0.1)", // Optional: Adds a subtle shadow

@@ -25,10 +25,10 @@ const ReusableButton = ({
   };
 
   return (
-    <Box display="flex" justifyContent="center"  >
+    <Box display="flex" justifyContent="center">
       <div id="mainContent">
         <Button
-          onClick={handleClick} // Use the onClick function passed as a prop
+          onClick={handleClick}
           sx={{
             width: width,
             height: height,
